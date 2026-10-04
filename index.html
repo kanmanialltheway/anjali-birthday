@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Little Place Called Us</title>
+<meta name="theme-color" content="#0e0d14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+<canvas id="stars" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- ============ INTRO ============ -->
+<main id="intro" class="view on center">
+  <p class="fade d1 big">For the girl who somehow became one of my favourite people.</p>
+  <p class="fade d2 serif-lg">Happy Birthday, Anjali Oviya. ♡</p>
+  <button class="btn glow fade d3" data-go="menu">come, I have something to show you →</button>
+</main>
+
+<!-- ============ MENU ============ -->
+<main id="menu" class="view">
+  <header class="head">
+    <h1>A Little Place Called Us</h1>
+    <p class="note">Some memories. Some chaos. A lot of love.</p>
+  </header>
+  <nav class="cards">
+
+  <button class="card" data-go="started">
+    <span class="em">🌱</span>
+    <b>How It Started</b>
+    <i>Where our story began</i>
+  </button>
+
+  <button class="card" data-go="files">
+    <span class="em">✨</span>
+    <b>The Anjali Oviya Files</b>
+    <i>Trust, chaos, sass & everything Anjali</i>
+  </button>
+
+  <button class="card" data-go="memories">
+    <span class="em">📸</span>
+    <b>Our Little Archive</b>
+    <i>Proof that we survived first year</i>
+  </button>
+
+  <button class="card" data-go="matters">
+    <span class="em">🤍</span>
+    <b>The Part That Matters</b>
+    <i>The things I don't joke about</i>
+  </button>
+
+  <button class="card" data-go="man">
+    <span class="em">😂</span>
+    <b>If I Were A Man...</b>
+    <i>I fear I would fall in love with you</i>
+  </button>
+
+  <button class="card" data-go="more">
+    <span class="em">🌙</span>
+    <b>Here's To Us</b>
+    <i>Because this was only Year One</i>
+  </button>
+
+</nav>
+  <p class="note tiny">Take your time. Open them all.</p>
+</main>
+
+<!-- ============ HOW IT STARTED ============ -->
+<main id="started" class="view">
+  <button class="back" data-go="menu">← Back to memories</button>
+  <h2>How Did This Even Happen?</h2>
+  <div class="timeline">
+    <p>I came into first year feeling alone, and somehow I connected with you and Swetha.</p>
+    <p>At first, when I realised you were nearly my age, I was genuinely so happy.</p>
+    <div class="stamp"><span class="em">🏆</span><b>OUR FIRST PRESENTATION</b><p>Our very first presentation together.</p><p>And somehow... we got Best Presentation.</p></div>
+    <p>At that point, I genuinely had no idea I was signing up for an entire year of madness with you.</p>
+  </div>
+  <figure class="polaroid wide" data-src="first-presentation.jpg" data-cap="Our very first presentation together."><div class="ph"></div></figure>
+</main>
+
+<!-- ============ ANJALI OVIYA FILES ============ -->
+<main id="files" class="view">
+
+  <button class="back" data-go="menu">← Back to memories</button>
+
+  <h2>The Anjali Oviya Files</h2>
+
+  <div class="prose">
+    <p>You don't trust people easily.</p>
+    <p>And I know that.</p>
+    <p>So the fact that somehow I became someone you trusted enough to share your thoughts, your chaos, your judgments, your rants, and basically your entire campus commentary with...</p>
+    <p>means more to me than I probably say.</p>
+  </div>
+
+  <div class="stamp center-t">
+    <span class="em">🔓</span>
+    <b>TRUST LEVEL UNLOCKED</b>
+    <p>Campus gossip privileges: ACTIVATED.</p>
+  </div>
+
+  <button class="btn" id="secretBtn">
+    things that annoy us? →
+  </button>
+
+  <div id="secret" class="secret" hidden>
+    <p>Mahalakshmi.</p>
+    <p>Sada Mudi 😭</p>
+    <p>Adarsh?????</p>
+    <p>Joanswaaa</p>
+    <p>Arockiya??!!</p>
+    <p class="note">No further questions will be entertained.</p>
+  </div>
+
+  <div class="profile">
+    <h3>ANJALI OVIYA</h3>
+
+    <dl>
+      <dt>Class</dt><dd>Topper</dd>
+      <dt>Occupation</dt><dd>Future Successful Woman™</dd>
+      <dt>Gym Status</dt><dd>Absolutely terrifying</dd>
+      <dt>Makeup Skills</dt><dd>100/100</dd>
+      <dt>Grooming</dt><dd>Illegal levels</dd>
+      <dt>Confidence</dt><dd>♾️</dd>
+      <dt>Sass</dt><dd>Unstable</dd>
+      <dt>Trust</dt><dd>Extremely rare</dd>
+      <dt>Heart</dt><dd>Surprisingly soft 🫶</dd>
+    </dl>
+  </div>
+
+  <div class="prose stack">
+
+    <article class="paper">
+      <h3>📚 THE AMBITIOUS ONE</h3>
+      <p>You are so ambitious and you work ridiculously hard for what you want.</p>
+      <p>I genuinely know that one day you're going to get everything you've been working for.</p>
+      <p>You study day and night, you push yourself, and you don't give up easily.</p>
+      <p><b>You're going to succeed. I know it.</b></p>
+    </article>
+
+    <article class="paper tilt">
+      <h3>💄 THE BEAUTY DEPARTMENT</h3>
+      <p>The girl who somehow carries an entire cosmetics store with her.</p>
+      <p>You never let me walk around under-groomed when we're going out, whether it's culturals, class, or literally anywhere.</p>
+      <p>When I look dull, you somehow fix me.</p>
+
+      <p class="hand">Me: looking like I haven't seen civilization in three days.</p>
+      <p class="hand">You: "Give me your face."</p>
+      <p class="hand">*lipstick application begins*</p>
+    </article>
+
+    <article class="paper">
+      <h3>🏋️ THE GYM RAT</h3>
+      <p>Six pack.</p>
+      <p>Strong.</p>
+      <p>Scary.</p>
+      <p>If I ever disappear, I'm sure you'll be there for my rescue!</p>
+    </article>
+
+  </div>
+
+</main>
+
+<!-- ============ MEMORIES ============ -->
+<main id="memories" class="view">
+  <button class="back" data-go="menu">← Back to memories</button>
+  <h2>Proof We Survived First Year</h2>
+  <p class="note center-t">tap a photo to open it</p>
+  <div class="gallery">
+    <figure class="polaroid r1" data-src="first-presentation.jpg" data-cap="Little did I know this was the beginning of an entire year with you."><div class="ph"></div>
+      <figcaption>🏆 The presentation that started everything</figcaption></figure>
+    <figure class="polaroid r2" data-src="memory-1.jpg" data-cap="How did we code like maniacs and still get A instead of S? Also: our hatred for Lekha is directly proportional to the probability of meeting her somewhere on campus."><div class="ph"></div>
+      <figcaption>💻 C Programming Chaos</figcaption></figure>
+    <figure class="polaroid r3" data-src="ss-biriyani.jpg" data-cap="That rainy day when we went for SS biriyani to celebrate our S grade... which apparently existed only in our dreams. Also, Santhosh Kumar had to survive approximately two hours of us scolding him during the bus travel."><div class="ph"></div>
+      <figcaption>🍛 SS Biriyani + Rain</figcaption></figure>
+    <figure class="polaroid r4" data-src="college.jpg" data-cap="Every single time we rant about how much we hate our college. We could probably publish a 400-page book."><div class="ph"></div>
+      <figcaption>🏫 Our Never-Ending College Rants</figcaption></figure>
+    <figure class="polaroid r1" data-src="anjali-1.jpg" data-cap="you say'bro,only you take good pics of me',its not the photo! its you!!!! "><div class="ph"></div><figcaption>prettyyyyy</figcaption></figure>
+    <figure class="polaroid r2" data-src="memory-2.jpg" data-cap="we have more to win and grin!,namaku end eh illa da kanna"><div class="ph"></div><figcaption>Eee saala cup namde!</figcaption></figure>
+  </div>
+ 
+</main>
+
+<!-- ============ THE PART THAT MATTERS ============ -->
+<main id="matters" class="view">
+  <button class="back" data-go="menu">← Back to memories</button>
+  <h2>The Part That Actually Matters</h2>
+  <div class="prose quiet">
+    <p>There is one thing I don't joke about, though.</p>
+    <p>when you cried and asked me not to leave the college.</p>
+    <p>That's when I realised how much I actually meant to you.</p>
+    <p class="gap">And there was another moment when I hurt you.</p>
+    <p>But somehow, you were still the one comforting me and telling me it was okay.</p>
+    <p>I don't think I'll ever forget that.</p>
+    <p class="gap">You have this bold, confident, slightly terrifying exterior...</p>
+    <p>...but underneath all of that, you're such a pure soul, Anjali Oviya.</p>
+    <p>And I'm genuinely grateful that I found you.</p>
+  </div>
+  <figure class="polaroid wide" data-src="matters.jpg" data-cap=""><div class="ph"></div></figure>
+    <div class="prose quiet">
+
+    <p>Sometimes college has made us feel like we're completely on our own.</p>
+    <p>But somehow, whenever one of us feels that way, the other one is there.</p>
+    <p>You never left me alone.</p>
+    <p>Even when I made mistakes.</p>
+    <p>Even when things were difficult.</p>
+    <p>Even when I thought I might have to leave.</p>
+    <p>We somehow kept lifting each other back up.</p>
+
+    <p class="gap">Maybe that's what makes this friendship special.</p>
+
+    <p>We don't make the difficult parts disappear.</p>
+
+    <p><b>We just make sure neither of us has to face them alone.</b></p>
+
+  </div>
+
+  <figure class="polaroid wide"
+          data-src="walk-alone.jpg"
+          data-cap="">
+    <div class="ph"></div>
+  </figure>
+</main>
+
+<!-- ============ IF I WERE A MAN ============ -->
+<main id="man" class="view">
+  <button class="back" data-go="menu">← Back to memories</button>
+  <h2>If I Were A Man...</h2>
+  <p class="big center-t">BRO!If I were a man, I fear I would fall for you.</p>
+  <ul class="check">
+    <li>Pretty? <b>✓</b></li><li>Hot? <b>✓</b></li><li>Ambitious? <b>✓</b></li><li>Smart? <b>✓</b></li>
+    <li>Strong enough to beat me up? <b>✓</b></li><li>Sass? <b>Unfortunately yes.</b></li>
+    <li>Makeup artist? <b>✓</b></li><li>Six pack? <b>EXCUSE ME???</b></li>
+  </ul>
+  <p class="serif-lg center-t">Final verdict: dangerously dateable.</p>
+  <p class="hand center-t">Fortunately for both of us, I'm your "COUSIN".</p>
+</main>
+
+
+<!-- ============ HERE'S TO MORE ============ -->
+<main id="more" class="view center">
+  <button class="back" data-go="menu">← Back to memories</button>
+  <h2>This Was Only Year One.</h2>
+  <div class="prose center-t">
+    <p>We've got so many more memories to make.</p>
+    <p class="list">More terrible code.<br>More campus gossip.<br>More food.<br>More rants about college.<br>More dressing each other up.<br>More "you won't believe what happened today."<br>More stupid jokes.<br>More surviving this place together.</p>
+    <p class="serif-lg">So here's to us.</p>
+    <p>I really, really hope we get to spend the rest of this college phase together — supporting each other, pushing each other, annoying each other, and watching each other become the people we want to be.</p>
+    <p>I hope we keep lifting each other in every way possible.</p>
+    <p class="hand">College cousin. Haha. ♡</p>
+  </div>
+    
+  <div class="center-t">
+    <button class="tiny-btn" id="boom">DON'T CLICK THIS!</button>
+  </div>
+
+  <section id="finale" class="finale" hidden>
+    <h2>HAPPY BIRTHDAY, DIVA!!! 👑💗</h2>
+
+    <p class="serif-lg">
+      Here's to another year of being ridiculously you.
+    </p>
+
+    <figure class="polaroid wide"
+            data-src="final-photo.jpg"
+            data-cap="">
+      <div class="ph"></div>
+    </figure>
+  </section>
+</main>
+
+
+<div id="lightbox" class="lightbox" hidden><div class="lb-in"><div id="lbPhoto"></div><p id="lbCap"></p><button class="btn" id="lbClose">close</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
